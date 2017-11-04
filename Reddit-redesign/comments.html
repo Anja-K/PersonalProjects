@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reddit commens</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Main css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="css/comments-style.css">
+</head>
+<body id="top" class="hide-before">	
+	<div id="page-wrapper" class="page-wrapper">
+
+		<!-- NAVIGATION BAR -->
+		<div id="navi" class="navigation">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+				  	<div class="nav-elements">
+					    <ul class="nav navbar-nav">
+					      <li id="more"><a href="#top" id="subreddits-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i>Subreddits</a></li>
+					      <li id="search">
+					      		<input type="text" class="btn-extended" placeholder="search" />
+						      	<a href="#" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>  	
+					      </li>
+					    </ul>
+				    </div>
+				     <div class="navbar-header nav-elements">
+				      <a class="navbar-brand" href="#"><img src="images/Reddit-logo.svg.png" /></a>
+				    </div>
+				    <div class="nav-elements">
+					    <ul class="nav navbar-nav navbar-right">
+					      <li id="log-in"><a href="#">Want to join? Log in/ Sign up</a></li>
+					      <li id="submit"><a href="#"><span>Submit</span> new link/post</a></li>
+					    </ul>
+				    </div>
+				  </div>
+			</nav>
+			<nav class="navbar navbar-inverse second-nav">
+				<div class="container-fluid">
+					    <ul class="nav navbar-nav">
+					      <li class="main-nav"><a href="#">r/Awww</a></li>
+					      <li class="main-nav"><a class="selected" href="#">Comments</a></li>
+					    </ul>
+				 </div>
+			</nav>
+		</div><!-- end of navigation-->
+
+		<!-- CONTENT -->
+		<div class="content-wrapper">
+			<div class="main-post">
+				<div class="post-wrapper">
+					<div class="post-img col-lg-7">
+						<img src="images/pets.jpg" alt="Cute pets" />
+					</div>
+					<div class="post-info col-lg-5">
+						<h4>16 years with my dog Skip</h4>
+						<p>
+							<i class="fa fa-clock-o" aria-hidden="true"></i> 4 hours ago &middot; by <a href="#"> mormasays</a> 
+							&middot; <a class="info report-post" href="#"><i class="fa fa-flag" aria-hidden="true"></i></a>
+						</p>
+						<div class="rating">		
+							<div class="points">
+								<h4>33,456</h4>
+								<p>points upvoated (86%)</p>
+							</div>
+							<div class="post-rate">
+								<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="icon-btns">
+							<a href="#all-comments" class=" rounded-btn comments"><i class="fa fa-comments" aria-hidden="true"></i></a>
+							<a href="#" class=" rounded-btn share"><i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>
+							<a href="#" class=" rounded-btn zoom"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+					<p class="permalink"><i class="fa fa-link" aria-hidden="true"></i><a href="#"> https://redd.it/6n9fdy</a></p>
+					</div>	
+				</div>
+			</div>
+
+			<!-- COMMENTS SECTION -->
+			<div class="comments-section">
+				<div id="all-comments" class="cmts">	
+					<ul>
+						<li>All 1114 comments</li>
+						<li>
+							<span>Sorted by: </span>
+							<select class="form-control" id="sort">
+								<option>Best</option>
+	    						<option>Top</option>
+	    						<option>New</option>
+	    						<option>Controversal</option>
+	    						<option>Old</option>
+	    						<option>Q &amp; A</option>
+	  						</select>
+						</li>	
+					</ul>
+				</div>
+			
+				<div class="row">
+
+					<div class="col-lg-8">
+					<!-- ADD COMMENT -->
+					<div class="form-group add-comment">
+	  						<textarea class="form-control" rows="5" id="comment"></textarea>
+	  						<label for="comment">Join the discussion:</label>
+	  						<button type="submit" class="btn save-btn">Save</button>
+					</div>
+				
+					<!-- COMMENT -->
+					<div class="comment">
+						<div class="top">
+							<h6 class="user">
+								<a href="#">Strange_Vagrant </a> 
+								<span class="comment-points"> 137 points</span>
+								<span class="date-time">
+									&middot; 4h ago 
+								</span>
+								<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+								<span class="children hide-content"> &middot; 20 children</span>
+							</h6>
+						</div>
+						<div class="content hide-child">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+
+							<p>Ut enim ad minim veniam.</p> 
+						</div>
+						<div class="actions hide-child">
+
+							<ul class="inline-list">
+								<li>
+									<p class="vote-up">	
+										<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									</p>
+								</li>
+								<li><a href="#">Reply</a></li>
+								<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+									<ul class="hidden-actions">
+										<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+										<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+										<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<!-- INDENTED COMMENT -->
+						<div class="indented comment push hide-child">
+							<div class="top">
+								<h6 class="user">
+									<a href="#">DaffyAJ <span class="comment-points"> 88 points</span></a> 
+									<span class="date-time">
+									&middot; 4h ago 
+									</span>
+									<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+									<span class="children hide-content"> &middot; 5 children</span>
+								</h6>
+							</div>
+							<div class="content hide-child">
+								<p>Lorem ipsum dolor sit amet.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p> 
+							</div>
+							<div class="actions hide-child">
+								<ul class="inline-list">
+									<li>
+										<p class="vote-up">	
+											<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+										</p>
+									</li>
+									<li><a href="#">Reply</a></li>
+									<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+										<ul class="hidden-actions">
+											<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+											<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+											<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div><!--end of indented comment 1-->
+
+						<!-- INDENTED COMMENT 2 -->
+						<div class="indented comment push hide-child">
+							<div class="top">
+								<h6 class="user">
+									<a href="#">DaffyAJ <span class="comment-points"> 88 points</span></a> 
+									<span class="date-time">
+									&middot; 4h ago 
+									</span>
+									<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+									<span class="children hide-content"> &middot; 2 children</span>
+								</h6>
+							</div>
+							<div class="content hide-child">
+								<p>Lorem ipsum dolor sit amet.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p> 
+							</div>
+							<div class="actions hide-child">
+								<ul class="inline-list">
+									<li>
+										<p class="vote-up">	
+											<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+										</p>
+									</li>
+									<li><a href="#">Reply</a></li>
+									<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+										<ul class="hidden-actions">
+											<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+											<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+											<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+							<!-- INDENTED COMMENT lvl 3 -->
+							<div class="indented comment push hide-child">
+								<div class="top">
+									<h6 class="user">
+										<a href="#">DaffyAJ <span class="comment-points"> 88 points</span></a> 
+										<span class="date-time">
+										&middot; 4h ago 
+										</span>
+										<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+										<span class="children hide-content"> &middot; 3 children</span>
+									</h6>
+								</div>
+								<div class="content hide-child">
+									<p>Lorem ipsum dolor sit amet.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.</p> 
+								</div>
+								<div class="actions hide-child">
+									<ul class="inline-list">
+										<li>
+											<p class="vote-up">	
+												<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											</p>
+										</li>
+										<li><a href="#">Reply</a></li>
+										<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+											<ul class="hidden-actions">
+												<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+												<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+												<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<!-- INDENTED COMMENT lvl 4 -->
+								<div class="indented comment push hide-child">
+									<div class="top">
+										<h6 class="user">
+											<a href="#">DaffyAJ <span class="comment-points"> 88 points</span></a> 
+											<span class="date-time">
+											&middot; 4h ago 
+											</span>
+											<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+											<span class="children hide-content"> &middot; 20 children</span>
+										</h6>
+									</div>
+									<div class="content hide-child">
+										<p>Lorem ipsum dolor sit amet.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p> 
+									</div>
+									<div class="actions hide-child">
+										<ul class="inline-list">
+											<li>
+												<p class="vote-up">	
+													<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+													<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+												</p>
+											</li>
+											<li><a href="#">Reply</a></li>
+											<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+												<ul class="hidden-actions">
+													<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+													<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+													<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div><!--end of indented comment lvl 4-->
+							</div><!--end of indented comment lvl 3-->
+						</div><!--end of indented comment -->
+					</div><!--end of comment -->
+
+
+					<!-- COMMENT 2 -->
+					<div class="comment">
+						<div class="top">
+							<h6 class="user">
+								<a href="#">Catmom2004 </a> 
+								<span class="comment-points"> 58 points</span>
+								<span class="date-time">
+									&middot; 6h ago 
+								</span>
+								<a href="#" class="collapse-btn"><i class="fa fa-minus" aria-hidden="true"></i></a>
+								<span class="children hide-content"> &middot; 2 children</span>
+							</h6>
+						</div>
+						<div class="content hide-child">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+
+							<p>Ut enim ad minim veniam.</p> 
+						</div>
+						<div class="actions hide-child">
+
+							<ul class="inline-list">
+								<li>
+									<p class="vote-up">	
+										<a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									</p>
+								</li>
+								<li><a href="#">Reply</a></li>
+								<li class="more-actions"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+									<ul class="hidden-actions">
+										<li class="save"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></li>
+										<li class="report"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a></li>
+										<li class="share"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> https://redd.it/6n9fdy</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div> <!--end of comment2-->	
+				</div>
+			</div>
+		</div><!-- end of comments section-->
+		</div><!-- end of comments content-->
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="footer-container">
+				<div class="nav-container">
+					<nav class="footer-nav">
+						<ul>
+							<li>
+								<h4>about</h4>
+								<p><a href="#">blog</a></p>
+								<p><a href="#">about</a></p>
+								<p><a href="#">source code</a></p>
+								<p><a href="#">advertise</a></p>
+								<p><a href="#">carers</a></p>
+							</li>
+							<li>
+								<h4>help</h4>
+								<p><a href="#">site rules</a></p>
+								<p><a href="#">FAQ</a></p>
+								<p><a href="#">wiki</a></p>
+								<p><a href="#">redditquette</a></p>
+								<p><a href="#">mod guidelines</a></p>
+								<p><a href="#">contact us</a></p>
+							</li>
+							<li>
+								<h4>apps &amp; tools</h4>
+								<p><a href="#">Reddit for iPhone</a></p>
+								<p><a href="#">Reddit for Android</a></p>
+								<p><a href="#">mobile website</a></p>
+								<p><a href="#">buttons</a></p>
+							</li>
+							<li>
+								<h4>< 3</h4>
+								<p><a href="#">reddit gold</a></p>
+								<p><a href="#">reddit gifts</a></p>
+							</li>
+						</ul>
+					</nav>
+					<div class="newsletter">
+						<h4>See more of reddit <i class="fa fa-reddit-alien" aria-hidden="true"></i></h4>
+						<label class="sr-only" for="email">See more of reddit</label>
+						<input type="email" name="email" placeholder="email" />
+						<button class="btn" type="submit" name="subscribe">Subscribe</button>
+					</div>
+				</div>
+				<hr />
+				<p class="copy">Use of this site constitutes acceptance of our User Agreement and Privacy Policy. © 2017 reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.</p>
+			</div>
+		</footer><!--end of footer -->
+	</div>
+
+	<!-- SIDEBAR -->
+	<div  id="sidebarid" class="navbar-default sidebar" role="navigation">
+                <div id="menu-down" class="sidebar-nav navbar-collapse" style="  background-image: url(img/sidebar-bg.jpg); background-size: 500px;  background-repeat: no-repeat;">
+                    <ul class="nav in" id="side-menu">
+                        <li>
+                        	<select>
+                        	  <option value="EN">Language</option>
+							  <option value="AF">Afrikanns</option>
+							  <option value="SQ">Albanian</option>
+							  <option value="AR">Arabic</option>
+							  <option value="HY">Armenian</option>
+							  <option value="EU">Basque</option>
+							  <option value="BN">Bengali</option>
+							  <option value="BG">Bulgarian</option>
+							  <option value="CA">Catalan</option>
+							  <option value="KM">Cambodian</option>
+							  <option value="ZH">Chinese (Mandarin)</option>
+							  <option value="HR">Croation</option>
+							  <option value="CS">Czech</option>
+							  <option value="DA">Danish</option>
+							  <option value="NL">Dutch</option>
+							  <option value="EN">English</option>
+							  <option value="ET">Estonian</option>
+							  <option value="FJ">Fiji</option>
+							  <option value="FI">Finnish</option>
+							  <option value="FR">French</option>
+							  <option value="KA">Georgian</option>
+							  <option value="DE">German</option>
+							  <option value="EL">Greek</option>
+							  <option value="GU">Gujarati</option>
+							  <option value="HE">Hebrew</option>
+							  <option value="HI">Hindi</option>
+							  <option value="HU">Hungarian</option>
+							  <option value="IS">Icelandic</option>
+							  <option value="ID">Indonesian</option>
+							  <option value="GA">Irish</option>
+							  <option value="IT">Italian</option>
+							  <option value="JA">Japanese</option>
+							  <option value="JW">Javanese</option>
+							  <option value="KO">Korean</option>
+							  <option value="LA">Latin</option>
+							  <option value="LV">Latvian</option>
+							  <option value="LT">Lithuanian</option>
+							  <option value="MK">Macedonian</option>
+							  <option value="MS">Malay</option>
+							  <option value="ML">Malayalam</option>
+							  <option value="MT">Maltese</option>
+							  <option value="MI">Maori</option>
+							  <option value="MR">Marathi</option>
+							  <option value="MN">Mongolian</option>
+							  <option value="NE">Nepali</option>
+							  <option value="NO">Norwegian</option>
+							  <option value="FA">Persian</option>
+							  <option value="PL">Polish</option>
+							  <option value="PT">Portuguese</option>
+							  <option value="PA">Punjabi</option>
+							  <option value="QU">Quechua</option>
+							  <option value="RO">Romanian</option>
+							  <option value="RU">Russian</option>
+							  <option value="SM">Samoan</option>
+							  <option value="SR">Serbian</option>
+							  <option value="SK">Slovak</option>
+							  <option value="SL">Slovenian</option>
+							  <option value="ES">Spanish</option>
+							  <option value="SW">Swahili</option>
+							  <option value="SV">Swedish </option>
+							  <option value="TA">Tamil</option>
+							  <option value="TT">Tatar</option>
+							  <option value="TE">Telugu</option>
+							  <option value="TH">Thai</option>
+							  <option value="BO">Tibetan</option>
+							  <option value="TO">Tonga</option>
+							  <option value="TR">Turkish</option>
+							  <option value="UK">Ukranian</option>
+							  <option value="UR">Urdu</option>
+							  <option value="UZ">Uzbek</option>
+							  <option value="VI">Vietnamese</option>
+							  <option value="CY">Welsh</option>
+							  <option value="XH">Xhosa</option>
+							</select>
+							<a href="#" id="back">Close <i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"> Popular</a>
+                        </li>
+                        <li>
+                            <a href="#"> All</a>
+                        </li>
+                        <li>
+                            <a href="#"> Random</a>
+                        </li>
+                        <li>
+                            <a href="#"> Ask reddit</a>
+                        </li>
+                        <li>
+                            <a href="#"> Funny</a>
+                        </li>
+                        <li>
+                            <a href="#"> News</a>
+                        </li>
+                        <li>
+                            <a href="#"> Wordlnews</a>
+                        </li>
+                        <li>
+                            <a href="#"> Gifs</a>
+                        </li>
+                        <li>
+                            <a href="#"> Videos</a>
+                        </li>
+                        <li>
+                            <a href="#"> Today learned</a>
+                        </li>
+                        <li>
+                            <a href="#"> Gaming</a>
+                        </li>
+                        <li>
+                            <a href="#"> Movies</a>
+                        </li>
+                        <li>
+                            <a class="selected" href="#"> Awww</a>
+                        </li>
+                        <li>
+                            <a href="#">Television</a>
+                        </li>
+                        <li>
+                            <a href="#">Mildly interesting</a>
+                        </li>
+                        <li>
+                            <a href="#">Shower thoughts</a>
+                        </li>
+                        <li>
+                            <a href="#">Old school cool</a>
+                        </li>
+                        <li>
+                            <a href="#">Jokes</a>
+                        </li>
+                        <li>
+                            <a href="#">Not the onion</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+	
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	
+</body>
+</html>

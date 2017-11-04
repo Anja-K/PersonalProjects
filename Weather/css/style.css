@@ -1,0 +1,255 @@
+/*Style.css*/
+*{
+	margin: 0;
+	padding:0;
+}
+
+html{
+	
+	height: 100%;
+	font-family: Arial, sans-serif;
+	
+   
+
+}
+body{
+	background-image: url('../Backgrounds/scatered-clouds.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	
+
+}
+
+
+
+.wrapper{
+	margin: 80px auto;
+	height: 100%;
+	width: 50%;
+
+}
+
+.mainContent{
+	height: auto;
+	background-color: rgba(254, 206, 168, 0.4);
+}
+
+.headerContent{
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+  	justify-content: center;
+
+  	border-bottom: 2px solid #FECEA8;
+  	height: 100px;
+  	background-color: #2A363B;
+  	
+
+}
+
+
+.button, #search, .toggle-btn{
+	border: 1px solid #99B898;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background: none;
+	margin-left: 15px;
+	color:#99B898;
+}
+
+.button{
+	background-color: #99B898;
+	color:#2A363B;
+
+}
+
+.button:hover{
+	background-color: #2A363B;
+	color: #99B898;
+}
+
+.toggle-btn{
+	border-top: 0px;
+	background-color: #2A363B;
+	border-color:#FECEA8;
+	color: #FECEA8;
+}
+
+.toggle-btn:hover{
+	background-color: #FECEA8;
+	color:#2A363B;
+}
+
+
+
+.mainContent,#important-info{
+	text-align: center;
+	
+}
+
+
+#current{
+	padding:50px;
+	color: #2A363B;
+
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+
+
+
+
+}
+
+#main,#result{
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+}
+
+
+#result{
+	padding: 20px 0;
+}
+
+#top-info{
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#important-info{
+	background-color: #2A363B ;
+	border-radius:50% 0% 50% 0%;
+	width: 200px;
+	height: 050px;
+	height:auto;
+	padding: 30px 0 35px 0; 
+	color: #99B898;
+	margin: 0 auto 10px auto;
+
+	
+}
+
+#important-info img{
+	margin:0;
+	padding: 0;
+}
+#important-info p:nth-child(2){
+	font-size: 55px;
+	margin: 5px 0;
+	color: #FECEA8;
+	
+}
+
+
+
+
+#forecast{
+	clear: both;
+}
+
+
+
+#city-info p{
+	margin-bottom: 10px;
+	font-size: 18px;
+	
+}
+
+
+#city-info p:first-child{
+	font-size: 24px;
+	font-weight: 600;
+
+	
+}
+
+
+#heading{
+	padding: 10px 0;
+}
+
+#clock{
+	font-size: 20px;
+}
+
+
+
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+	border-radius: none;
+	border: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: none;
+	color: black;
+}
+
+.day-forecast{
+	color: #FECEA8;
+	background-color: #2A363B;
+	font-size: 20px;
+	
+	
+	
+}
+
+
+.day-forecast div{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+	
+}
+
+
+.ui-widget-content{
+	background: none;
+	background-color: #FECEA8;
+	width: 100%;
+	color:#2A363B;
+}
+
+.detales tr:first-child{
+	color: #E84A5F;
+	font-weight: 600;
+}
+
+.temp-day{
+	font-size: 24px;
+	color:#99B898;
+}
+
+
+
+
+
+
